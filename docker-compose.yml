@@ -10,8 +10,6 @@ services:
       - .env
     environment:
       - DOMAIN_NAME=${DOMAIN_NAME}
-    volumes:
-      - ./nginx/ssl:/etc/nginx/ssl
     restart: always
   frontend:
     container_name: frontend
